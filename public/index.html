@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAYNOMICS</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+    
+    /* Additional styles for error handling */
+    .error-input {
+      border: 1.5px solid #dc3545 !important;
+      box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    }
+    
+    .error-text {
+      color: #dc3545;
+      font-size: 11px;
+      margin-top: 4px;
+      display: none;
+      font-weight: 500;
+    }
+    
+    #map-error {
+      color: #dc3545;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+      font-weight: 500;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      padding: 8px;
+      max-width: 800px;
+      margin: 10px auto;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="heading">
+  <h1><img src="logo.jpg" alt="logo">VAYNOMICS</h1>
+  <p>Navigate . Calculate . Compare . Save</p>
+</div>
+
+<div class="input-card">
+  <div class="input-row">
+    <div class="input-group">
+      <label for="source">Source Place:</label>
+      <input type="text" id="source" placeholder="Enter source (e.g., T.Nagar,Chennai)">
+      <small id="source-error" class="error-text"></small>
+    </div>
+    <div class="input-group">
+      <label for="destination">Destination Place:</label>
+      <input type="text" id="destination" placeholder="Enter destination (e.g., Koramangala,Bengaluru)">
+      <small id="destination-error" class="error-text"></small>
+    </div>
+  </div>
+
+  <div class="input-row">
+    <div class="input-group">
+      <label for="mileage">Vehicle Mileage (km/litre):</label>
+      <input type="number" id="mileage" placeholder="e.g., 18" step="0.1" min="1">
+      <small id="mileage-error" class="error-text"></small>
+    </div>
+    <div class="input-group">
+      <label for="fuelPrice">Fuel Price (₹ per litre):</label>
+      <input type="number" id="fuelPrice" placeholder="e.g., 105" step="0.1" min="1">
+      <small id="fuelPrice-error" class="error-text"></small>
+    </div>
+  </div>
+
+  <button onclick="getRoute()">Get Route & Rides</button>
+  <p><i>* Enter Source and Destination as "Placename,Cityname". Currently Operational for Chennai, Bengaluru, Mumbai, Delhi only. </i></p>
+</div>
+
+<div id="map-error" class="error-text"></div>
+<div id="map"></div>
+
+<select id="sortOptions" onchange="sortRides()">
+  <option value="">-- Sort By --</option>
+  <option value="priceLow">Price: Low to High</option>
+  <option value="priceHigh">Price: High to Low</option>
+  <option value="durationLow">Duration: Low to High</option>
+  <option value="durationHigh">Duration: High to Low</option>
+</select>
+
+<div id="ride-options"></div>
+
+<div id="external-links"></div>
+
+<div id="chart-section">
+  <h3 style="text-align: center;">Price Chart</h3>
+  <canvas id="priceChart"></canvas>
+  <h3 style="text-align: center; margin-top: 40px;">Duration Chart</h3>
+  <canvas id="durationChart"></canvas>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h2>VAYNOMICS</h2>
+    <p>Navigate . Calculate . Compare . Save</p>
+    <p>&copy; 2025 VAYNOMICS. All rights reserved.</p>
+    <p>Contact: <a href="https://mail.google.com/mail/?view=cm&to=vaynomicscontactus@gmail.com" target="_blank">vaynomicscontactus@gmail.com</a></p>
+
+    <p>Creator's Profiles:</p>
+    <div class="social-icons">
+      <a href="https://github.com/vishnu2005" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vishnu-priya-243418247" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <p class="disclaimer">
+    Disclaimer: VAYNOMICS is designed to assist users with estimated fares, durations, and ride comparisons for common travel routes. Actual prices and availability may vary based on real-time conditions, service provider policies, and other factors. Metro and bus fare information is currently available for Chennai, Bengaluru, Delhi, and Mumbai based on publicly accessible data. Information for other cities is not included at this stage but may be incorporated in future updates as reliable data becomes available. Ride estimates for Uber, Rapido, or other services are indicative and may appear for locations where these services are not currently operational. VAYNOMICS does not facilitate ride bookings and is not directly affiliated with any transport providers. This platform is intended as a travel planning and estimation tool to help users make informed decisions and is not a substitute for official apps or transport services.There can be variations in prices to a minimal possible difference as we didn't use paid APIs.Estimated fares do not account for promotional discounts, surge pricing adjustments, or special offers from service providers.
+  </p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
