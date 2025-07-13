@@ -2,14 +2,13 @@ import requests
 import os
 
 def download_model():
-    file_id = "1UvGeHimLrOdimITapAykGHCcCNp4B1Ai"  # Replace with your real ID
-    url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    model_url = "https://www.dropbox.com/scl/fi/db3pyotpurmfc8y8wmpej/multitype_uber_model.pkl?rlkey=jv1u5ebxlzadqv7ep5pnhrw65&st=utoybe57&dl=1"
     model_path = "multitype_uber_model.pkl"
 
     if not os.path.exists(model_path):
-        print("Downloading ML model from Google Drive...")
+        print("📦 Downloading ML model from Dropbox...")
         try:
-            response = requests.get(url)
+            response = requests.get(model_url)
             response.raise_for_status()
             with open(model_path, "wb") as f:
                 f.write(response.content)
@@ -21,3 +20,4 @@ def download_model():
 
 if __name__ == "__main__":
     download_model()
+
