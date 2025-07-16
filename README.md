@@ -247,4 +247,20 @@ python app.py  # or gunicorn --bind 0.0.0.0:$PORT wsgi:app
 Vishnu Priya
 Aspiring full-stack + ML developer passionate about building smart, scalable real-world solutions.  
 ✉️ Open to internships, feedback & collaboration  
-<h3 align="center">🚦 Navigate . 📊 Calculate . ⚖️ Compare . 💸 Save</h3> <p align="center"> Built with ❤️ using ML, Maps, and Real-World Logic<br/> <i>VAYNOMICS reflects what engineering should be: useful, transparent, and grounded in user needs.</i><br/><br/> <b>📫 Let's connect:</b> <a href="https://www.linkedin.com/in/vishnu-priya-243418247">LinkedIn</a> | <a href="mailto:vishnupriyavivek13@gmail.com">Email</a><br/><br/> <sub>© 2025 Vishnu Priya RV • Designed with purpose, built with passion.</sub> </p>
+
+<h3 align="center">🚦 Navigate &nbsp; • &nbsp; 📊 Calculate &nbsp; • &nbsp; ⚖️ Compare &nbsp; • &nbsp; 💸 Save</h3>
+
+<p align="center">
+  Built with ❤️ using ML, Maps, and Practical Fare Intelligence<br/>
+  <i>VAYNOMICS embodies what engineering should be — useful, transparent, and user-focused.</i>
+</p>
+
+<p align="center">
+  <b>📫 Connect with me:</b>
+  <a href="https://www.linkedin.com/in/vishnu-priya-243418247" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+  <a href="mailto:vishnupriyavivek13@gmail.com">Email</a>
+</p>
+
+<p align="center">
+  <sub>© 2025 Vishnu Priya RV • Designed with purpose, built with passion.</sub>
+</p>
