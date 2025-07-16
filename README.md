@@ -9,9 +9,6 @@
   <a href="https://github.com/vishnu2005/VAYNOMICS">
     <img src="https://img.shields.io/badge/Status-Deployed-success?style=flat-square"/>
   </a>
-  <a href="https://github.com/vishnu2005/VAYNOMICS/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" />
-  </a>
   <img src="https://img.shields.io/badge/Made%20With-%E2%9D%A4-red?style=flat-square" />
   <img src="https://img.shields.io/badge/Powered%20By-ML%20%26%20FullStack-blueviolet?style=flat-square" />
   <a href="https://app.netlify.com/sites/superlative-macaron-26e588/deploys">
