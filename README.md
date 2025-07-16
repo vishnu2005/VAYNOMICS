@@ -2,7 +2,7 @@
 
 **VAYNOMICS** is a smart fare comparison web application that estimates ride fares across various transport modes—Uber, Rapido (bike/car), Metro, Bus, and even your own vehicle—based on source and destination. It combines real-time geospatial routing, machine learning, and transit fare logic to provide commuters with the most cost-effective travel options.
 
-🌐 **Live App**: [https://vaynomics.netlify.app](https://vaynomics.netlify.app)  
+🌐 **Live App**: [Go LIVE](https://68779701d2d3c472a017cbf9--superlative-macaron-26e588.netlify.app/)
 🧠 **ML API**: [https://ml-api-vaynomics.onrender.com](https://ml-api-vaynomics.onrender.com)  
 ⚙️ **Backend API**: [https://vaynomics-backend.onrender.com](https://vaynomics-backend.onrender.com)
 
