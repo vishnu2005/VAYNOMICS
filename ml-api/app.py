@@ -60,8 +60,8 @@ def predict_fare():
 
     # Predict fare
     predicted_fare = model.predict(features)[0]
-    min_fare = round(predicted_fare * 0.9, 2)
-    max_fare = round(predicted_fare * 1.1, 2)
+    min_fare = round(predicted_fare * 1.2, 2)
+    max_fare = round(predicted_fare * 2.0, 2)
 
     return jsonify({
         "estimated_fare": round(predicted_fare, 2),
