@@ -1,6 +1,7 @@
+
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb://127.0.0.1:27017"; // Local MongoDB connection
+const uri = process.env.MONGODB_URI; // ✅ Use production-safe URI from .env
 const dbName = "transitdb";
 
 let dbInstance = null;
@@ -8,10 +9,19 @@ let dbInstance = null;
 async function connectDB() {
   if (dbInstance) return dbInstance;
 
-  const client = new MongoClient(uri);
-  await client.connect();
-  dbInstance = client.db(dbName);
-  return dbInstance;
+  try {
+    const client = new MongoClient(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    await client.connect();
+    dbInstance = client.db(dbName);
+    console.log("✅ Connected to MongoDB Atlas");
+    return dbInstance;
+  } catch (err) {
+    console.error("❌ MongoDB connection failed:", err.message);
+    throw err;
+  }
 }
 
 module.exports = connectDB;
