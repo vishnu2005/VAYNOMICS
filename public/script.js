@@ -230,7 +230,7 @@ async function getRoute() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/rides", {
+      const res = await fetch("https://vaynomics-backend.onrender.com/rides", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
