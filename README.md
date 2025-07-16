@@ -6,13 +6,18 @@
 <p align="center"><i>Intelligent Multimodal Fare Estimator with ML + Fullstack Power</i></p>
 
 <p align="center">
-  <a href="https://github.com/vishnu2005/VAYNOMICS"><img src="https://img.shields.io/badge/Status-Deployed-success?style=flat-square"/></a>
-  <a href="https://github.com/vishnu2005/VAYNOMICS/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" /></a>
+  <a href="https://github.com/vishnu2005/VAYNOMICS">
+    <img src="https://img.shields.io/badge/Status-Deployed-success?style=flat-square"/>
+  </a>
+  <a href="https://github.com/vishnu2005/VAYNOMICS/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" />
+  </a>
   <img src="https://img.shields.io/badge/Made%20With-%E2%9D%A4-red?style=flat-square" />
   <img src="https://img.shields.io/badge/Powered%20By-ML%20%26%20FullStack-blueviolet?style=flat-square" />
-  <a href="https://68779701d2d3c472a017cbf9--superlative-macaron-26e588.netlify.app/"><img src="https://api.netlify.com/api/v1/badges/2cd1df3d-f5d9-4014-a367-8026b3ad2f0b/deploy-status" alt="Netlify Status"/></a>
+  <a href="https://app.netlify.com/sites/superlative-macaron-26e588/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/2cd1df3d-f5d9-4014-a367-8026b3ad2f0b/deploy-status" alt="Netlify Status"/>
+  </a>
 </p>
-
 
 ---
 
