@@ -1,4 +1,12 @@
-# 🚖 VAYNOMICS – Navigate.Calculate.Compare.Save
+<p align="center">
+  <img src="./public/logo.jpg" alt="VAYNOMICS Logo" width="220"/>
+</p>
+
+<h1 align="center">VAYNOMICS</h1>
+<h3 align="center">Navigate . Calculate . Compare . Save</h3>
+<p align="center"><i>Intelligent Multimodal Fare Estimator with ML + Fullstack Power</i></p>
+
+---
 
 **VAYNOMICS** is a smart fare comparison web application that estimates ride fares across various transport modes—Uber, Rapido (bike/car), Metro, Bus, and even your own vehicle—based on source and destination. It combines real-time geospatial routing, machine learning, and transit fare logic to provide commuters with the most cost-effective travel options.
 
