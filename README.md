@@ -77,7 +77,7 @@ Mileage: 20 km/l
 Fuel Price: ₹110/litre
 
 ## 📁 Folder Structure
-
+```
 VAYNOMICS/
 ├── public/           # Frontend files (index.html, script.js, style.css, assets)
 ├── controllers/      # Express controller for handling fare logic
@@ -88,7 +88,7 @@ VAYNOMICS/
 ├── server.js         # Main backend entrypoint
 ├── assets/           # Dashboard images
 ├── README.md 
-
+```
 
 ---
 
