@@ -26,7 +26,7 @@ exports.getRides = async (req, res) => {
 
       const mlResponses = await Promise.all(
         rideTypes.map((rideType) =>
-          axios.post("http://localhost:5001/predict-multitype", {
+          axios.post("https://ml-api-vaynomics.onrender.com/predict-multitype", {
             pickup_latitude: sourceCoords[0],
             pickup_longitude: sourceCoords[1],
             dropoff_latitude: destCoords[0],
