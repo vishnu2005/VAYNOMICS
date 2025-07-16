@@ -1,7 +1,6 @@
 <p align="center">
   <img src="./public/logo.jpg" alt="VAYNOMICS Logo" width="220"/>
 </p>
-
 <h1 align="center">VAYNOMICS</h1>
 <h3 align="center">Navigate . Calculate . Compare . Save</h3>
 <p align="center"><i>Intelligent Multimodal Fare Estimator with ML + Fullstack Power</i></p>
