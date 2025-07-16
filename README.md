@@ -169,8 +169,8 @@ Uber’s fare system is driven by a **highly dynamic and proprietary surge algor
 To validate this, **VAYNOMICS** includes a **custom line graph** illustrating how **Uber fares fluctuate dramatically for the *same source and destination*** depending on the time, day, and environmental context.
 
 <p align="center">
-  <img src="assets/uber_fare_volatility_chart.jpg" alt="Uber Fare Volatility Graph" width="850"/>
-  <br/><em>Fare fluctuation for the same route (e.g., T Nagar → Koyambedu) over multiple times & days</em>
+  <img src="assets/uber_fare_volatility_chart.png" alt="Uber Fare Volatility Graph" width="850"/>
+  <br/><em>Fare fluctuation for the same route (Meenambakkam → Guindy) over multiple times & days</em>
 </p>
 
 📊 This visualization clearly shows:
