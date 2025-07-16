@@ -104,42 +104,43 @@ VAYNOMICS/
 
 ## 📊 Real-World Fare Prediction Accuracy
 VAYNOMICS goes beyond theoretical accuracy — it provides transparent dashboards to showcase how well its fare predictions align with real-world data across Indian cities.
-
-**🚖 Uber Fare Prediction – ML Model (Random Forest Regressor)**
-📈 Metric: Accuracy % vs. route-based real fares
-
-📍 Test Cases: Popular routes like T Nagar → Koyambedu, Koramangala → Majestic, etc.
-
-🧠 Model: Trained on Indian Uber-style synthetic dataset with city, ride type, and time-based features
-
-✅ Observed Accuracy: ~91% average accuracy across major routes (varies by city and ride type)
-
-📌 Even without real-time *PAID* Uber API access, the model reliably mirrors real fare behavior for common commutes.
-
-#### 📈 Uber Go Accuracy Chart  
-![Uber Go Accuracy](./assets/uberGo_accuracy_chart.jpg)
-
-#### 📈 Uber Auto Accuracy Chart  
-![Uber Auto Accuracy](./assets/uberAuto_accuracy_chart.jpg)
-
-#### 📈 Uber XL Accuracy Chart  
-![Uber XL Accuracy](./assets/uberXL_accuracy_chart.jpg)
+To showcase transparency and reliability, VAYNOMICS includes **accuracy dashboards** for both its ML-driven and heuristic estimators.
 
 ---
 
-**🛵 Rapido Fare Estimator – Surge-Adjusted Heuristic**
-📈 Metric: Accuracy % vs. observed fare samples
+### 🚖 Uber Fare Prediction – ML Model (Random Forest Regressor)
 
-🧪 Evaluation: Real Rapido fares benchmarked in Chennai & Bengaluru (bike and car)
+📈 **Metric**: Accuracy % vs. route-based real fares  
+📍 **Test Cases**: Popular routes like T Nagar → Koyambedu, Koramangala → Majestic, etc.  
+🧠 **Model**: Trained on a custom Uber-style Indian dataset using city, ride type, and time-based features  
+✅ **Observed Accuracy**: ~91% average accuracy across major city routes (Uber Go, Auto, XL)  
+📌 Even without real-time *paid* Uber API access, the model reliably mimics realistic fare trends and behavior.
 
-⚙️ Heuristic Logic: Time-based surge factors + city-specific base rates
+<p align="center">
+  <img src="assets/uberGo_accuracy_chart.jpg" alt="Uber Go Accuracy" width="600"/>
+  <br/><em>Uber Go Accuracy Chart</em><br/><br/>
+  <img src="assets/uberAuto_accuracy_chart.jpg" alt="Uber Auto Accuracy" width="600"/>
+  <br/><em>Uber Auto Accuracy Chart</em><br/><br/>
+  <img src="assets/uberXL_accuracy_chart.jpg" alt="Uber XL Accuracy" width="600"/>
+  <br/><em>Uber XL Accuracy Chart</em>
+</p>
 
-✅ Observed Accuracy: 92–94% accuracy consistently across different times and locations
+---
 
-📌 Optimized manually using real fare data to match peak and non-peak trends with impressive consistency.
+### 🛵 Rapido Fare Estimator – Surge-Adjusted Heuristic
 
-#### 📈 Rapido Accuracy Chart  
-![Rapido Accuracy](./assets/rapido_accuracy_chart.jpg)
+📈 **Metric**: Accuracy % vs. observed fare samples  
+🧪 **Evaluation**: Real Rapido fares benchmarked in Chennai & Bengaluru (Bike and Car)  
+⚙️ **Logic**: Time-based surge multipliers + city-wise base rates  
+✅ **Observed Accuracy**: ~92–94% accuracy across various locations and time slots  
+📌 Tuned using real fare benchmarks to closely simulate Rapido's dynamic pricing.
+
+<p align="center">
+  <img src="assets/rapido_accuracy_chart.jpg" alt="Rapido Accuracy" width="600"/>
+  <br/><em>Rapido Accuracy Chart</em>
+</p>
+
+---
 
 
 ## 📦 Setup Instructions (for developers)
