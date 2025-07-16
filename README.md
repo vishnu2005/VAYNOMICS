@@ -117,11 +117,11 @@ To showcase transparency and reliability, VAYNOMICS includes **accuracy dashboar
 📌 Even without real-time *paid* Uber API access, the model reliably mimics realistic fare trends and behavior.
 
 <p align="center">
-  <img src="assets/uberGo_accuracy_chart.jpg" alt="Uber Go Accuracy" width="600"/>
+  <img src="assets/uberGo_accuracy_chart.jpg" alt="Uber Go Accuracy" width="850"/>
   <br/><em>Uber Go Accuracy Chart</em><br/><br/>
-  <img src="assets/uberAuto_accuracy_chart.jpg" alt="Uber Auto Accuracy" width="600"/>
+  <img src="assets/uberAuto_accuracy_chart.jpg" alt="Uber Auto Accuracy" width="850"/>
   <br/><em>Uber Auto Accuracy Chart</em><br/><br/>
-  <img src="assets/uberXL_accuracy_chart.jpg" alt="Uber XL Accuracy" width="600"/>
+  <img src="assets/uberXL_accuracy_chart.jpg" alt="Uber XL Accuracy" width="850"/>
   <br/><em>Uber XL Accuracy Chart</em>
 </p>
 
@@ -136,7 +136,7 @@ To showcase transparency and reliability, VAYNOMICS includes **accuracy dashboar
 📌 Tuned using real fare benchmarks to closely simulate Rapido's dynamic pricing.
 
 <p align="center">
-  <img src="assets/rapido_accuracy_chart.jpg" alt="Rapido Accuracy" width="600"/>
+  <img src="assets/rapido_accuracy_chart.jpg" alt="Rapido Accuracy" width="850"/>
   <br/><em>Rapido Accuracy Chart</em>
 </p>
 
