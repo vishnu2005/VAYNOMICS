@@ -34,7 +34,7 @@
 - 🛵 **Rapido Fare Estimation (Car/Bike)**  
   Surge-adjusted heuristic formulas for both ride types.
 
-- 🚌 **Metro & Bus Fare Logic (Chennai & Bengaluru)**  
+- 🚌 **Metro & Bus Fare Logic (Bus : Chennai & Bengaluru ; Metro : Chennai,Bengaluru,Mumbai & Delhi)**  
   Real routes, durations, and fare stages implemented with database-backed lookups.
 
 - ✅ **Smart City-Aware System**  
